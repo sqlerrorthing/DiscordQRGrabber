@@ -7,6 +7,11 @@ It's a python class where you pass a QR code that draws that qr and an instructi
 # Uasge
 !!! Download `assets` folder !!!
 ```python
+import qrcode
+from qrcode.main import QRCode
+
+from drawable import Drawable
+
 qr = QRCode(version=1, error_correction=qrcode.constants.ERROR_CORRECT_H, box_size=170, border=2)
 qr.add_data("lol data sql my sql lorem here >>> :#")
 qr.make(fit=True)
